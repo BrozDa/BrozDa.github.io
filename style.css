@@ -8,6 +8,9 @@ body{
   font-family: monospace;
   background: #111;
 }
+.bg-white{
+  background-color: aliceblue;
+}
 #navbar {
   display: flex;
   justify-content: center;
@@ -17,49 +20,44 @@ body{
   width: 100%;
   min-height: 5vh;
   background-color: #222;
-  color: white;
+  color: aliceblue;
   padding: 0;
 }
-
 .navbar-container {
   display: flex;
   gap: 0rem;
 }
-
 .navbar-item {
   text-align: center;
-  color: white;
+  color: aliceblue;
   text-decoration: none;
   padding: 0.5rem 1rem;
   width: 130px;
   border-radius: 10px;
   transition: background-color 0.3s ease;
 }
-
 .navbar-item:hover {
   background-color: hsl(0, 0%, 25%);
 }
 
 
 section {
-  padding: 100px 20px;
-  min-height: 100vh;
+  padding: 30px 20px;
+  
 }
 #title { 
-  color: white;
+  color: aliceblue;
   background: #0A1A63;
   background: linear-gradient(90deg,rgba(10, 26, 99, 1) 0%, rgba(30, 30, 43, 1) 51%, rgba(10, 26, 99, 1) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 0px;
+  min-height: 100vh;
 }
 .title-content-name{
   font-size: 25px;
 }
-
-
-
 .title.line {
   width: 0ch;
   overflow: hidden;
@@ -73,6 +71,60 @@ section {
 .title.line:nth-child(3) {
   animation: typing3 1s steps(20) forwards;
   animation-delay: 4.6s;
+}
+#about{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25vh;
+  padding-right: 25vh;
+  text-align: center;
+}
+
+#skills{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-left: 25vh;
+  padding-right: 25vh;
+}
+.skill-sections-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.skill-sections-container > div {
+  flex: 1 1 30%; /* grow, shrink, and set a base width */
+  min-width: 250px; /* sets the minimum width before wrapping occurs */
+}
+.separate-skill-container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.skill-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.skill{
+  border-radius: 2px;
+  background-color: aliceblue;
+  border: 1px black solid;
+  padding: 5px;
+  margin: 5px;
+}
+.skill:hover{
+  background-color: #222;
+  color: aliceblue;
+}
+@media (max-width: 900px) {
+  .skill-sections-container {
+    flex-direction: column;
+    align-items: center; /* optional: center columns */
+  }
 }
 @keyframes typing {
   from { width: 0; }
@@ -88,6 +140,3 @@ section {
   from { width: 0; }
   to { width: 11ch; }
 }
-.about { background: #d0d0d0; color: black;}
-.projects { background: #e2e2e2; }
-.contact { background: #d0d0d0; }
