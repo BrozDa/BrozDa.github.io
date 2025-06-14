@@ -3,28 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Daniel Broz</title>
   <link rel="stylesheet" href="./style.css">
   <style>
     
   </style>
 </head>
 <body>
-  <nav id="navbar">
-  <div class="navbar-container">
-    <a href="#about" class="navbar-item">About</a>
-    <a href="#projects" class="navbar-item">Projects</a>
-    <a href="#contact" class="navbar-item">Contact</a>
-  </div>
-</nav>
-
+  <header>
+    <nav id="navbar">
+      <div class="navbar-container">
+        <a href="#about" class="navbar-item">About</a>
+        <a href="#projects" class="navbar-item">Projects</a>
+        <a href="#contact" class="navbar-item">Contact</a>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
   <section id="title">
     <div class="title-content">
       <div class="title-content-name"><h1>Hi, I am Daniel Broz</h1></div>
       <div class="descriptions">
         <p class="title line">Experienced Network Engineer</p>
         <p class="title line">Aspiring Software Developer</p>
-        <p class="title line">Slow runner, weak lifter</p>
+        <p class="title line">Slow runner</p>
       </div>
 
     </div>
@@ -39,6 +42,9 @@
       </p>
       <p>
       I began focusing more deliberately on software engineering, shifting my learning to the .NET ecosystem. I first built a strong foundation in data structures and algorithms to ensure I understood core programming principles. After that, I developed several backend applications using C# and .NET, gaining hands-on experience with APIs, data access  layers, and service architecture. Currently, I’m expanding into frontend technologies like Blazor and Razor Pages, aiming to become a well-rounded full-stack .NET developer.
+      </p>
+      <p>
+        In my free time, you’ll usually find me spending time with my family, working at my desk, or out on a trail running or hiking.
       </p>
     </div>
   </section>
@@ -198,9 +204,47 @@
           <button class="project-skill">Spectre Console</button>
         </div>
       </div>
-      
+      <div class="single-project-container">
+        <a href="www.google.com" target="_blank">
+          <div class="project-title-container">
+            <div class="project-title-container-image">
+              <img src="github-mark.png" alt="github icon" height="18px">
+            </div>
+          <h3>Snake Game</h3>
+          </div>
+        </a>
+        <div class="project-text-container">
+          <p>
+            A simple C# console-based Snake game featuring an interactive menu and customizable settings, such as window size and wall traversal behavior. The game includes a pause function and demonstrates fundamental object-oriented programming principles. Although the code structure could be improved, this was my first project using OOP, and it provided valuable hands-on learning experience.
+          </p>
+        </div>
+        <div class="project-skills-container">
+          <button class="project-skill">OOP</button>
+        </div>
+      </div>
+    </div>
+    <div class="other-projects-container">
+      <button class="other-projects">
+        <img src="github-mark.png" alt="github icon" height="18px">
+        Other projects
+      </button>
     </div>
   </section>
-  <section id="contact" class="bg-white"><h1>Contact</h1></section>
+  </main>
+
+  <footer>
+    <section id="footer" class="bg-white">
+      <div class="footer-item">© 2025 Daniel Broz</div>
+      <div class="footer-item">
+        <img src="./linkedin-logo.png" alt="linkedin icon" height="18px">
+        LinkedIn
+      </div>
+      <div class="footer-item">
+        <img src="./github-mark.png" alt="Github icon" height="18px">
+         Github
+      </div>
+    </section>
+  </footer>
+  
 </body>
 </html>

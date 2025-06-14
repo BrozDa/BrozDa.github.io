@@ -2,6 +2,18 @@ html
 {
   scroll-behavior: smooth;
 }
+a{
+  text-decoration: none;
+  
+}
+a:visited{
+  color: inherit;
+}
+a:hover{
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out; /* smooth animation */
+
+}
 body{
   margin: 0px;
   padding: 0rem;
@@ -19,17 +31,12 @@ body{
     rgba(17, 17, 17,0)   /* transparent right edge */
   );
 }
-a{
-  text-decoration: none;
+section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 35vh;
+  padding-right: 35vh;
   
-}
-a:visited{
-  color: inherit;
-}
-a:hover{
-  transform: translateY(-5px);
-  transition: transform 0.2s ease-in-out; /* smooth animation */
-
 }
 
 #navbar {
@@ -40,7 +47,7 @@ a:hover{
   top: 0;
   width: 100%;
   min-height: 5vh;
-  background-color: #222;
+  background: linear-gradient(90deg,rgba(10, 26, 99, 1) 0%, rgba(30, 30, 43, 1) 51%, rgba(10, 26, 99, 1) 100%);
   color: aliceblue;
   padding: 0;
 }
@@ -62,11 +69,6 @@ a:hover{
 }
 
 
-section {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  
-}
 #title { 
   color: aliceblue;
   background: #0A1A63;
@@ -84,14 +86,14 @@ section {
   width: 0ch;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 2s steps(20) forwards;
+  animation: typing 2s steps(28) forwards;
 }
 .title.line:nth-child(2) {
-  animation: typing2 2s steps(20) forwards;
+  animation: typing2 2s steps(27) forwards;
   animation-delay: 2.2s;
 }
 .title.line:nth-child(3) {
-  animation: typing3 1s steps(20) forwards;
+  animation: typing3 0.8s steps(11) forwards;
   animation-delay: 4.6s;
 }
 #about{
@@ -103,6 +105,13 @@ section {
   padding-right: 25vh;
   text-align: center;
 }
+
+
+
+
+
+
+
 
 #skills{
   display: flex;
@@ -160,22 +169,24 @@ section {
   flex:1;
   width: 100%;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
 }
 .projects-container > div {
-  flex: 1 1 30%; /* grow, shrink, and set a base width */
-  min-width: 300px; /* sets the minimum width before wrapping occurs */
+  flex: 1 1 30%;
+  min-width: 150px;
+  max-width: 30%;
+  
 }
 
 .single-project-container{
-  min-width: 250px; 
   border: 2px solid black;
   border-radius: 5px;
   padding: 1rem;
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: space-around;
 }
 .project-title-container{
   
@@ -196,6 +207,11 @@ section {
   padding-left: 18px;
   padding-right: 18px;
 }
+.project-skills-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 .project-skill{
   border-radius: 10px;
   background-color: aliceblue;
@@ -207,6 +223,41 @@ section {
   transform: translateY(-3px);
   transition: transform 0.2s ease-in-out; /* smooth animation */
 }
+.other-projects-container{
+  justify-content: center;
+  display: inline;
+}
+.other-projects{
+  display: block;
+  background-color: inherit;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 0px 10px grey;
+  
+}
+.other-projects:hover{
+  transform: translateY(-3px);
+  transition: transform 0.2s ease-in-out; /* smooth animation */
+}
+
+
+#footer{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap:2rem;
+}
+.footer-item{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 5px;
+}
+
+
+
 @media (max-width: 900px) {
   .skill-sections-container {
     flex-direction: column;
