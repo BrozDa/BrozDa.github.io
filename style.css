@@ -10,7 +10,28 @@ body{
 }
 .bg-white{
   background-color: aliceblue;
+  border-style: solid;
+  border-width: 0 0 2px 0; /* bottom border only, 3px thick */
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, 
+    rgba(17, 17, 17,0),    /* transparent left edge */
+    rgba(17, 17, 17,1),     /* fully opaque center */
+    rgba(17, 17, 17,0)   /* transparent right edge */
+  );
 }
+a{
+  text-decoration: none;
+  
+}
+a:visited{
+  color: inherit;
+}
+a:hover{
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out; /* smooth animation */
+
+}
+
 #navbar {
   display: flex;
   justify-content: center;
@@ -42,7 +63,8 @@ body{
 
 
 section {
-  padding: 30px 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   
 }
 #title { 
@@ -110,9 +132,9 @@ section {
   justify-content: center;
 }
 .skill{
-  border-radius: 2px;
+  border-radius: 10px;
   background-color: aliceblue;
-  border: 1px black solid;
+  border: 2px black solid;
   padding: 5px;
   margin: 5px;
 }
@@ -120,12 +142,85 @@ section {
   background-color: #222;
   color: aliceblue;
 }
+
+
+
+
+
+#projects{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-left: 25vh;
+  padding-right: 25vh;
+  gap:2rem;
+}
+.projects-container{
+  display: flex;
+  flex:1;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.projects-container > div {
+  flex: 1 1 30%; /* grow, shrink, and set a base width */
+  min-width: 300px; /* sets the minimum width before wrapping occurs */
+}
+
+.single-project-container{
+  min-width: 250px; 
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.project-title-container{
+  
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+.project-title-container-image{
+  float: left;
+  margin-right: 20px;
+}
+.project-text-container{
+  text-align: center;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.project-skill{
+  border-radius: 10px;
+  background-color: aliceblue;
+  border: 1px black solid;
+  padding: 5px;
+  margin: 5px;
+}
+.project-skill:hover{
+  transform: translateY(-3px);
+  transition: transform 0.2s ease-in-out; /* smooth animation */
+}
 @media (max-width: 900px) {
   .skill-sections-container {
     flex-direction: column;
-    align-items: center; /* optional: center columns */
+    align-items: center;
+  }
+  .projects-container{
+    flex-direction: column;
+    align-items: center;
   }
 }
+
+
+
+
 @keyframes typing {
   from { width: 0; }
   to { width: 28ch; }

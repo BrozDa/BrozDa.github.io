@@ -20,7 +20,7 @@
 
   <section id="title">
     <div class="title-content">
-      <div class="title-content-name"><h1>Hi. I am Daniel Broz</h1></div>
+      <div class="title-content-name"><h1>Hi, I am Daniel Broz</h1></div>
       <div class="descriptions">
         <p class="title line">Experienced Network Engineer</p>
         <p class="title line">Aspiring Software Developer</p>
@@ -49,6 +49,7 @@
       <h3>Software Development</h3>
       <div class="skill-container">
         <button class="skill">C#</button>
+        <button class="skill">OOP</button>
         <button class="skill">EF Core</button>
         <button class="skill">LINQ</button>
         <button class="skill">Unit Testing</button>
@@ -91,7 +92,115 @@
     </div>
 
   </section>
-  <section id="projects" class="bg-white"><h1>Projects</h1></section>
+  <section id="projects" class="bg-white">
+    <div class="section-title"><h1>Projects</h1></div>
+    <div class="projects-container">
+      <div class="single-project-container">
+        <a href="www.google.com" target="_blank">
+          <div class="project-title-container">
+            <div class="project-title-container-image">
+              <img src="github-mark.png" alt="github icon" height="18px">
+            </div>
+          <h3>Shift Logger</h3>
+          </div>
+        </a>
+        <div class="project-text-container">
+          <p>
+           A .NET project showcasing both API creation and consumption using ASP.NET Core Minimal APIs. The API handles data persistence with Entity Framework Core, including relational data modeling. Functionality includes creating and managing shift types, assigned shifts, and workers. The API was thoroughly using Swagger and Postman to ensure reliability and usability.
+          </p>
+        </div>
+        <div class="project-skills-container">
+          <button class="project-skill">ASP .NET Core</button>
+          <button class="project-skill">Minimal API</button>
+          <button class="project-skill">Swagger</button>
+          <button class="project-skill">Postman</button>
+          <button class="project-skill">SQL Server</button>
+          <button class="project-skill">EF Core</button>
+        </div>
+      </div>
+      <div class="single-project-container">
+        <a href="www.google.com" target="_blank">
+          <div class="project-title-container">
+            <div class="project-title-container-image">
+              <img src="github-mark.png" alt="github icon" height="18px">
+            </div>
+          <h3>Excel Reader</h3>
+          </div>
+        </a>
+        <div class="project-text-container">
+          <p>
+            A lightweight Excel and CSV reader built with EPPlus and CsvHelper, designed to import single-sheet dynamic data into a database using Dapper, with support for reading and exporting .xlsx and .csv files.
+          </p>
+        </div>
+        <div class="project-skills-container">
+          <button class="project-skill">EPPlus</button>
+          <button class="project-skill">CsvHelper</button>
+          <button class="project-skill">Dapper</button>
+          <button class="project-skill">SQL Server</button>
+        </div>
+      </div>
+      <div class="single-project-container">
+        <a href="www.google.com" target="_blank">
+          <div class="project-title-container">
+            <div class="project-title-container-image">
+              <img src="github-mark.png" alt="github icon" height="18px">
+            </div>
+          <h3>Sport Results Notifier</h3>
+          </div>
+        </a>
+        <div class="project-text-container">
+          <p>
+            A .NET project that scrapes structured data directly from the web using the HTML Agility Pack. The extracted information is then formatted and automatically sent via email, enabling efficient data collection and reporting.
+          </p>
+        </div>
+        <div class="project-skills-container">
+          <button class="project-skill">HTML Agility Pack</button>
+          <button class="project-skill">SmtpClient</button>
+        </div>
+      </div>
+      <div class="single-project-container">
+        <a href="www.google.com" target="_blank">
+          <div class="project-title-container">
+            <div class="project-title-container-image">
+              <img src="github-mark.png" alt="github icon" height="18px">
+            </div>
+          <h3>Excercise Tracker</h3>
+          </div>
+        </a>
+        <div class="project-text-container">
+          <p>
+            A lightweight C# console application for tracking two types of exercises: weight training and cardio. Each exercise type uses a different ORM for data persistence — Entity Framework Core for weight training and Dapper for cardio — showcasing a flexible and modular design.
+          </p>
+        </div>
+        <div class="project-skills-container">
+          <button class="project-skill">Repository Pattern</button>
+          <button class="project-skill">EF Core</button>
+          <button class="project-skill">Dapper</button>
+          <button class="project-skill">SQL Server</button>
+        </div>
+      </div>
+      <div class="single-project-container">
+        <a href="www.google.com" target="_blank">
+          <div class="project-title-container">
+            <div class="project-title-container-image">
+              <img src="github-mark.png" alt="github icon" height="18px">
+            </div>
+          <h3>Drinks Menu</h3>
+          </div>
+        </a>
+        <div class="project-text-container">
+          <p>
+            A .NET project focused on consuming an external API to display a restaurant’s drinks menu. Users can browse drinks by category and view detailed information for each item. The application features a user-friendly, terminal-based interface built with Spectre.Console for an enhanced console experience.
+          </p>
+        </div>
+        <div class="project-skills-container">
+          <button class="project-skill">RestClient</button>
+          <button class="project-skill">Spectre Console</button>
+        </div>
+      </div>
+      
+    </div>
+  </section>
   <section id="contact" class="bg-white"><h1>Contact</h1></section>
 </body>
 </html>
