@@ -1,3 +1,7 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
 html 
 {
   scroll-behavior: smooth;
@@ -23,46 +27,41 @@ body{
 .bg-white{
   background-color: aliceblue;
   border-style: solid;
-  border-width: 0 0 2px 0; /* bottom border only, 3px thick */
+  border-width: 0 0 2px 0;
   border-image-slice: 1;
   border-image-source: linear-gradient(to right, 
-    rgba(17, 17, 17,0),    /* transparent left edge */
-    rgba(17, 17, 17,1),     /* fully opaque center */
-    rgba(17, 17, 17,0)   /* transparent right edge */
+    rgba(17, 17, 17,0),
+    rgba(17, 17, 17,1),
+    rgba(17, 17, 17,0)
   );
 }
+.bg-blue{
+  background: linear-gradient(90deg,rgba(10, 26, 99, 1) 0%, rgba(30, 30, 43, 1) 51%, rgba(10, 26, 99, 1) 100%);
+  color: aliceblue;
+}
 section {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 35vh;
-  padding-right: 35vh;
-  
+  padding: 30px 25vh;
+  display: flex;
+  min-width: 300px;
 }
 
 #navbar {
-  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
-  min-height: 5vh;
-  background: linear-gradient(90deg,rgba(10, 26, 99, 1) 0%, rgba(30, 30, 43, 1) 51%, rgba(10, 26, 99, 1) 100%);
-  color: aliceblue;
-  padding: 0;
+  height: 30px;
+  padding: 10px 0px 0px 0px ;
 }
 .navbar-container {
   display: flex;
-  gap: 0rem;
 }
 .navbar-item {
   text-align: center;
-  color: aliceblue;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  width: 130px;
+  padding: 10px;
+  width: 10vw;
   border-radius: 10px;
-  transition: background-color 0.3s ease;
 }
 .navbar-item:hover {
   background-color: hsl(0, 0%, 25%);
@@ -70,14 +69,12 @@ section {
 
 
 #title { 
-  color: aliceblue;
-  background: #0A1A63;
-  background: linear-gradient(90deg,rgba(10, 26, 99, 1) 0%, rgba(30, 30, 43, 1) 51%, rgba(10, 26, 99, 1) 100%);
-  display: flex;
+  height: 100vh;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  padding-top: 0px;
-  min-height: 100vh;
+  padding: 0;
+  
 }
 .title-content-name{
   font-size: 25px;
@@ -97,45 +94,33 @@ section {
   animation-delay: 4.6s;
 }
 #about{
-  display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  padding-left: 25vh;
-  padding-right: 25vh;
   text-align: center;
+  
 }
-
-
-
-
-
-
 
 
 #skills{
-  display: flex;
   flex-flow: column;
   align-items: center;
-  padding-left: 25vh;
-  padding-right: 25vh;
 }
-.skill-sections-container {
+.skill-categories-container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 25px;
+  overflow: auto;
 }
-.skill-sections-container > div {
-  flex: 1 1 30%; /* grow, shrink, and set a base width */
-  min-width: 250px; /* sets the minimum width before wrapping occurs */
-}
-.separate-skill-container{
+.skill-category-container{
+  flex: 1 1 30%;
+  min-width: 250px;
   display: flex;
   flex-flow: column;
   align-items: center;
 }
-.skill-container{
+.skill-list{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -146,6 +131,7 @@ section {
   border: 2px black solid;
   padding: 5px;
   margin: 5px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 .skill:hover{
   background-color: #222;
@@ -153,59 +139,46 @@ section {
 }
 
 
-
-
-
 #projects{
-  display: flex;
   flex-flow: column;
   align-items: center;
-  padding-left: 25vh;
-  padding-right: 25vh;
   gap:2rem;
 }
 .projects-container{
   display: flex;
-  flex:1;
-  width: 100%;
   flex-flow: row wrap;
   justify-content: center;
+  width: 100%;
   gap: 2rem;
-}
-.projects-container > div {
-  flex: 1 1 30%;
-  min-width: 150px;
-  max-width: 30%;
-  
 }
 
 .single-project-container{
   border: 2px solid black;
   border-radius: 5px;
   padding: 1rem;
+
+  flex: 1 1 30%;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
+
+  min-width: 250px;
+  max-width: 30%;
 }
 .project-title-container{
-  
   display: flex;
-  flex-flow: row;
   justify-content: space-evenly;
   align-items: center;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0 5px;
   width: 100%;
 }
 .project-title-container-image{
-  float: left;
   margin-right: 20px;
 }
 .project-text-container{
   text-align: center;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 0 18px;
 }
 .project-skills-container{
   display: flex;
@@ -218,11 +191,12 @@ section {
   border: 1px black solid;
   padding: 5px;
   margin: 5px;
+  transition: transform 0.2s ease-in-out;
 }
 .project-skill:hover{
   transform: translateY(-3px);
-  transition: transform 0.2s ease-in-out; /* smooth animation */
 }
+
 .other-projects-container{
   justify-content: center;
   display: inline;
@@ -238,13 +212,11 @@ section {
   
 }
 .other-projects:hover{
-  transform: translateY(-3px);
-  transition: transform 0.2s ease-in-out; /* smooth animation */
+  transform: scale(1.1,1.1);
+  transition: transform 0.2s ease-in-out;
 }
 
-
 #footer{
-  display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   gap:2rem;
@@ -258,8 +230,8 @@ section {
 
 
 
-@media (max-width: 900px) {
-  .skill-sections-container {
+@media (max-width: 1300px) {
+  .skill-categories-container{
     flex-direction: column;
     align-items: center;
   }
