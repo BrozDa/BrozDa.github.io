@@ -99,7 +99,7 @@ section {
   animation-delay: 2.2s;
 }
 .title.line:nth-child(3) {
-  animation: typing3 0.8s steps(11) forwards;
+  animation: typing3 0.8s steps(12) forwards;
   animation-delay: 4.6s;
 }
 #about{
