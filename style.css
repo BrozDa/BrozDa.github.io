@@ -83,7 +83,7 @@ section {
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 1rem;
 }
 .title-content-name{
   font-size: 2rem;
@@ -263,11 +263,11 @@ section {
   }
   .projects-container{
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
   }
   .single-project-container{
-    max-width: 30%;
-
+    min-width: 32vh;
+    max-width: 100%;
   }
   
 }
