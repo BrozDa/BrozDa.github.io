@@ -63,12 +63,14 @@
         <span class="skill">Postman</span>
         <span class="skill">LINQ</span>
         <span class="skill">Unit Testing</span>
+        <span class="skill">Moq</span>
         <span class="skill">SQL</span>
         <span class="skill">Git</span>
         <span class="skill">React</span>
         <span class="skill">JavaScript</span>
         <span class="skill">HTML</span>
         <span class="skill">CSS</span>
+        <span class="skill">Tailwind</span>
         
       </div>
     </div>
@@ -102,131 +104,50 @@
   <section id="projects" class="bg-white">
     <div class="section-title"><h2>Projects</h2></div>
     <div class="projects-container">
-      <div class="single-project-container">
-        <a href="https://github.com/BrozDa/CodeReviews.Console.ShiftsLogger/tree/main/ShiftLogger.Brozda" target="_blank">
+  <div class="single-project-container">
+        <a href="https://github.com/BrozDa/Taskify" target="_blank">
           <div class="project-title-container">
             <div class="project-title-container-image">
               <img src="./images/github-mark.png" alt="github icon" height="18px">
             </div>
-          <h3>Shift Logger</h3>
+          <h3>Taskify</h3>
           </div>
         </a>
         <div class="project-text-container">
           <p>
-           A .NET project showcasing both API creation and consumption using ASP.NET Core Minimal APIs. The API handles data persistence with Entity Framework Core, including relational data modeling. Functionality includes creating and managing shift types, assigned shifts, and workers. The API was thoroughly using Swagger and Postman to ensure reliability and usability.
+           A full-stack task management application built with ASP.NET Core Web API and React. The app includes JWT-based authentication, allowing users to securely create, edit, complete, and delete tasks with priorities, due dates, and custom tags. Data persistence is handled through EF Core with relational modeling. The UI is styled with Tailwind and tested for responsiveness across devices.
           </p>
         </div>
         <div class="project-skills-container">
           <span class="project-skill">ASP .NET Core</span>
-          <span class="project-skill">Minimal API</span>
-          <span class="project-skill">Swagger</span>
+          <span class="project-skill">EF Core</span>
+          <span class="project-skill">SQL Server</span>
+          <span class="project-skill">React</span>
+          <span class="project-skill">Tailwind</span>
+        </div>
+      </div>    
+     <div class="single-project-container">
+        <a href="https://github.com/BrozDa/Inventory-Order-Tracking-API" target="_blank">
+          <div class="project-title-container">
+            <div class="project-title-container-image">
+              <img src="./images/github-mark.png" alt="github icon" height="18px">
+            </div>
+          <h3>Inventory-Order-Tracking</h3>
+          </div>
+        </a>
+        <div class="project-text-container">
+          <p>
+           An ASP.NET Core Web API simulating an order management system. The API manages JWT based authentication with refresh keys, products, orders, and audit logs with role based access, user email verification and stock validation. Data persistence is handled through EF Core with relational modeling. The API was tested using unit tests, mocks, and manual checks with Postman.
+          </p>
+        </div>
+        <div class="project-skills-container">
+          <span class="project-skill">ASP .NET Core</span>
+          <span class="project-skill">EF Core</span>
+          <span class="project-skill">SQL Server</span>
+          <span class="project-skill">Moq</span>
           <span class="project-skill">Postman</span>
-          <span class="project-skill">SQL Server</span>
-          <span class="project-skill">EF Core</span>
         </div>
-      </div>
-      <div class="single-project-container">
-    <a href="https://github.com/BrozDa/CodeReviews.React.ShoppingList/tree/main/ShoppingList.BrozDa" target="_blank">
-        <div class="project-title-container">
-            <div class="project-title-container-image">
-              <img src="./images/github-mark.png" alt="github icon" height="18px">
-            </div>
-           <h3>Shopping List</h3>
-        </div>
-    </a>
-    <div class="project-text-container">
-        <p>
-            A full-stack application built with .NET (Minimal APIs) and React, demonstrating complete CRUD functionality.
-			The backend uses .NET Minimal APIs and Entity Framework Core to manage data in an MS SQL database. On the frontend, a responsive React interface allows users to add items, mark them as picked up, or remove them from a shopping list.
-        </p>
-    </div>
-    <div class="project-skills-container">
-        <span class="project-skill">React</span>
-        <span class="project-skill">HTML</span>
-		<span class="project-skill">CSS</span>
-		<span class="project-skill">Entity Framework Core</span>
-		<span class="project-skill">ASP.NET Core</span>
-	</div>
-</div>
-      <div class="single-project-container">
-        <a href="https://github.com/BrozDa/CodeReviews.Console.ExcelReader" target="_blank">
-          <div class="project-title-container">
-            <div class="project-title-container-image">
-              <img src="./images/github-mark.png" alt="github icon" height="18px">
-            </div>
-          <h3>Excel Reader</h3>
-          </div>
-        </a>
-        <div class="project-text-container">
-          <p>
-            A lightweight Excel and CSV reader built with EPPlus and CsvHelper, designed to import single-sheet dynamic data into a database using Dapper, with support for reading and exporting .xlsx and .csv files.
-          </p>
-        </div>
-        <div class="project-skills-container">
-          <span class="project-skill">EPPlus</span>
-          <span class="project-skill">CsvHelper</span>
-          <span class="project-skill">Dapper</span>
-          <span class="project-skill">SQL Server</span>
-        </div>
-      </div>
-      <div class="single-project-container">
-        <a href="https://github.com/BrozDa/CodeReviews.Console.SportsResults/tree/main/SportsResults.BrozDa" target="_blank">
-          <div class="project-title-container">
-            <div class="project-title-container-image">
-              <img src="./images/github-mark.png" alt="github icon" height="18px">
-            </div>
-          <h3>Sport Results Notifier</h3>
-          </div>
-        </a>
-        <div class="project-text-container">
-          <p>
-            A .NET project that scrapes structured data directly from the web using the HTML Agility Pack. The extracted information is then formatted and automatically sent via email, enabling efficient data collection and reporting.
-          </p>
-        </div>
-        <div class="project-skills-container">
-          <span class="project-skill">HTML Agility Pack</span>
-          <span class="project-skill">SmtpClient</span>
-        </div>
-      </div>
-      <div class="single-project-container">
-        <a href="https://github.com/BrozDa/CodeReviews.Console.ExerciseTracker/tree/main/ExerciseTracker.Brozda" target="_blank">
-          <div class="project-title-container">
-            <div class="project-title-container-image">
-              <img src="./images/github-mark.png" alt="github icon" height="18px">
-            </div>
-          <h3>Exercise Tracker</h3>
-          </div>
-        </a>
-        <div class="project-text-container">
-          <p>
-            A lightweight C# console application for tracking two types of exercises: weight training and cardio. Each exercise type uses a different ORM for data persistence — Entity Framework Core for weight training and Dapper for cardio — showcasing a flexible and modular design.
-          </p>
-        </div>
-        <div class="project-skills-container">
-          <span class="project-skill">Repository Pattern</span>
-          <span class="project-skill">EF Core</span>
-          <span class="project-skill">Dapper</span>
-          <span class="project-skill">SQL Server</span>
-        </div>
-      </div>
-      <div class="single-project-container">
-        <a href="https://github.com/BrozDa/STUDY.SnakeGame" target="_blank">
-          <div class="project-title-container">
-            <div class="project-title-container-image">
-              <img src="./images/github-mark.png" alt="github icon" height="18px">
-            </div>
-          <h3>Snake Game</h3>
-          </div>
-        </a>
-        <div class="project-text-container">
-          <p>
-            A simple C# console-based Snake game featuring an interactive menu and customizable settings, such as window size and wall traversal behavior. The game includes a pause function and demonstrates fundamental object-oriented programming principles. Although the code structure could be improved, this was my first project using OOP, and it provided valuable hands-on learning experience.
-          </p>
-        </div>
-        <div class="project-skills-container">
-          <span class="project-skill">OOP</span>
-        </div>
-      </div>
+      </div>     
     </div>
     <div class="other-projects-container">
       <a href="https://github.com/BrozDa" target="_blank">
